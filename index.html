@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Миний Влог</title>
+    <title>Онлайн Дэлгүүр</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Миний Влог</h1>
-
-        <form id="blogForm">
-            <label for="title">Гарчиг:</label>
-            <input type="text" id="title" placeholder="Тэмдэглэлийн гарчиг" required>
-
-            <label for="image">Зураг оруулах:</label>
-            <input type="file" id="image" accept="image/*" required>
-
-            <label for="content">Тэмдэглэл бичих:</label>
-            <textarea id="content" placeholder="Тэмдэглэлээ энд бичнэ үү..." required></textarea>
-
-            <button type="submit">Нийтлэх</button>
-        </form>
-
-        <div id="blogPosts" class="blog-posts">
-            <!-- Тэмдэглэлүүд энд харагдана -->
+    <div class="header">
+        <h1>Манай Онлайн Дэлгүүр</h1>
+        <div class="cart">
+            <button id="viewCart">Карз (<span id="cart-count">0</span>)</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-list">
+        <div class="product" data-id="1">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Бүтээгдэхүүн 1</h3>
+            <p>Үнэ: 20,000₮</p>
+            <button class="add-to-cart">Картанд нэмэх</button>
+        </div>
+
+        <div class="product" data-id="2">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Бүтээгдэхүүн 2</h3>
+            <p>Үнэ: 30,000₮</p>
+            <button class="add-to-cart">Картанд нэмэх</button>
+        </div>
+
+        <div class="product" data-id="3">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Бүтээгдэхүүн 3</h3>
+            <p>Үнэ: 40,000₮</p>
+            <button class="add-to-cart">Картанд нэмэх</button>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="
